@@ -16,15 +16,10 @@ public class main {
             allNotebook[i] = notebook;
         }
 
-        int pos = 0;
-        Notebook min;
-        Notebook max;
-        Notebook temp;
-        String tempBrandName = "";
         /**
          //Sorting Algorithm
          for (int i = 0; i < allNotebook.length; i ++) {
-         for (int j = 1; j < allNotebook.length - 1; j+=50) {
+         for (int j = 1; j < allNotebook.length - 1; j++) {
          if(allNotebook[j-1].getCost() > allNotebook[j].getCost()) {
          temp = allNotebook[j-1];
          allNotebook[j-1] = allNotebook[j];
@@ -45,6 +40,10 @@ public class main {
          }
          }
          */
+
+        // Values to save selected data
+        int pos = 0;
+        Notebook max;
 
         //Rebuild Sorting Algorithm
         for (int i = allNotebook.length - 1; i >= 0; i--) {
